@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - Scripts
   layers:
   - Default
   - TransparentFX
@@ -45,7 +46,7 @@ TagManager:
   - name: Background
     uniqueID: 2076405823
     locked: 0
-  - name: Ground
+  - name: Environment
     uniqueID: 2333502817
     locked: 0
   - name: Character
