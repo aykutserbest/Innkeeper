@@ -6,8 +6,19 @@ TagManager:
   tags:
   - Ground
   - Scripts
-  - SeedBuyApple
   - Seed
+  - SeedWheat
+  - SeedGreenGrape
+  - SeedRedGrape
+  - SeedBuyWheat
+  - SeedBuyGreenGrape
+  - SeedBuyRedGrape
+  - BuyChicken
+  - BuySheep
+  - BuyCow
+  - SeedChicken
+  - SeedSheep
+  - SeedCow
   layers:
   - Default
   - TransparentFX

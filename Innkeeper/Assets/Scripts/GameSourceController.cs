@@ -11,10 +11,11 @@ public class GameSourceController : MonoBehaviour
     public int goldCount = 50;
     public int increaseGold = 10;
     public int increaseFood = 10;
-    public int increaseDring = 10;
+    public int increaseDrink = 10;
 
 
-
+    public int seedStatus = 0;
+    public string seedType;
 
 
 

@@ -25,7 +25,7 @@ public class UIManager : MonoBehaviour
         goldText.text = "Gold : "+source.goldCount.ToString();
         foodText.text = "Food : " + source.foodCount.ToString();
         drinkText.text = "Drink : " + source.drinkCount.ToString();
-        customerCountText.text= source.customerCount.ToString();
+       customerCountText.text= source.customerCount.ToString();
     }
 
 }
