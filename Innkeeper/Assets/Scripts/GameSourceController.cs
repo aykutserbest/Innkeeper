@@ -18,6 +18,12 @@ public class GameSourceController : MonoBehaviour
     public string seedType;
 
 
+    public int farmAreaStatus;
+    public string farmAreaName;
+    //public int farmStatus = 0;
+    //public string seedType;
+
+
 
 
 

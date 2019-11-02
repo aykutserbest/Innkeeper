@@ -19,6 +19,7 @@ TagManager:
   - SeedChicken
   - SeedSheep
   - SeedCow
+  - Farm
   layers:
   - Default
   - TransparentFX

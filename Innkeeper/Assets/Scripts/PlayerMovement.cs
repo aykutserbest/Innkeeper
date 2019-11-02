@@ -11,6 +11,15 @@ public class PlayerMovement : MonoBehaviour
     float horizontalMove = 0f;
     bool jump = false;
     bool crouch = false;
+    public GameSourceController source;
+
+
+    private void Start()
+    {
+        source = GameObject.FindGameObjectWithTag("Scripts").GetComponent<GameSourceController>();
+    }
+
+
 
     // Update is called once per frame
     void Update()
@@ -31,4 +40,33 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
         jump = false;
     }
+
+
+
+    //farm
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.transform.tag == "Farm")
+        {
+
+            source.farmAreaStatus = 1;
+            source.farmAreaName = collision.gameObject.name.ToString();
+            Debug.Log(source.farmAreaName);
+          
+
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.transform.tag == "Farm")
+        {
+
+            source.farmAreaStatus = 1;
+            source.farmAreaName = "";
+           
+
+        }
+    }
+
 }

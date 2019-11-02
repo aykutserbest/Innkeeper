@@ -26,21 +26,21 @@ public class SeedBuyController : MonoBehaviour
                 Debug.Log("bugday seedi aldınız");
                 GameObject.FindGameObjectWithTag("SeedWheat").GetComponent<Renderer>().enabled = true;
                 source.seedStatus = 1;
-                source.seedType = "SeedBuyWheat";
+                source.seedType = "Wheat";
             }
             else if (gameObject.transform.tag == "SeedBuyGreenGrape" && source.seedStatus == 0)
             {
                 Debug.Log("yeşil üzüm seedi aldınız");
                 GameObject.FindGameObjectWithTag("SeedGreenGrape").GetComponent<Renderer>().enabled = true;
                 source.seedStatus = 1;
-                source.seedType = "SeedBuyGreenGrape";
+                source.seedType = "GreenGrape";
             }
             else if (gameObject.transform.tag == "SeedBuyRedGrape" && source.seedStatus == 0)
             {
                 Debug.Log("kırmızı üzüm seedi aldınız");
                 GameObject.FindGameObjectWithTag("SeedRedGrape").GetComponent<Renderer>().enabled = true;
                 source.seedStatus = 1;
-                source.seedType = "SeedBuyRedGrape";
+                source.seedType = "RedGrape";
                 
             }
             else if (gameObject.transform.tag == "BuyChicken" && source.seedStatus == 0)
@@ -48,7 +48,7 @@ public class SeedBuyController : MonoBehaviour
                 Debug.Log("tavuk seedi aldınız");
                 GameObject.FindGameObjectWithTag("SeedChicken").GetComponent<Renderer>().enabled = true;
                 source.seedStatus = 1;
-                source.seedType = "BuyChicken";
+                source.seedType = "Chicken";
 
             }
             else if (gameObject.transform.tag == "BuySheep" && source.seedStatus == 0)
@@ -56,7 +56,7 @@ public class SeedBuyController : MonoBehaviour
                 Debug.Log("tavuk seedi aldınız");
                 GameObject.FindGameObjectWithTag("SeedSheep").GetComponent<Renderer>().enabled = true;
                 source.seedStatus = 1;
-                source.seedType = "BuySheep";
+                source.seedType = "Sheep";
 
             }
             else if (gameObject.transform.tag == "BuyCow" && source.seedStatus == 0)
@@ -64,7 +64,7 @@ public class SeedBuyController : MonoBehaviour
                 Debug.Log("tavuk seedi aldınız");
                 GameObject.FindGameObjectWithTag("SeedCow").GetComponent<Renderer>().enabled = true;
                 source.seedStatus = 1;
-                source.seedType = "BuyCow";
+                source.seedType = "Cow";
 
             }
 
