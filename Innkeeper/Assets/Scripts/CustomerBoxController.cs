@@ -6,31 +6,30 @@ public class CustomerBoxController : MonoBehaviour
 {
 
     public GameSourceController source;
-   
+
 
 
     private void Start()
     {
         source = GameObject.FindGameObjectWithTag("Scripts").GetComponent<GameSourceController>();
-       
 
-}
+
+    }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.transform.tag == "Player")
         {
 
-            
-            if (source.customerCount>0 && source.foodCount>=10 && source.drinkCount>=6)
+
+            if (source.customerCount > 0 && source.foodCount >= 10 && source.drinkCount >= 6)
             {
-                
+
                 source.customerCount--;
                 source.foodCount = source.foodCount - 10;
                 source.drinkCount = source.drinkCount - 6;
                 source.goldCount = source.goldCount + source.increaseGold;
 
-               
             }
             else
             {
@@ -47,7 +46,7 @@ public class CustomerBoxController : MonoBehaviour
                     Debug.Log("drink not enough");
                 }
             }
-            
+
         }
     }
 

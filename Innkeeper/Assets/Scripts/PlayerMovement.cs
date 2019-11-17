@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     bool jump = false;
     bool crouch = false;
     public GameSourceController source;
-
+    public GameObject foundFarm;
 
     private void Start()
     {
@@ -51,8 +51,15 @@ public class PlayerMovement : MonoBehaviour
 
             source.farmAreaStatus = 1;
             source.farmAreaName = collision.gameObject.name.ToString();
-            Debug.Log(source.farmAreaName);
-          
+
+
+
+            foundFarm = collision.gameObject;
+            Debug.Log(foundFarm);
+
+
+        
+
 
         }
     }
@@ -62,7 +69,7 @@ public class PlayerMovement : MonoBehaviour
         if (collision.transform.tag == "Farm")
         {
 
-            source.farmAreaStatus = 1;
+            source.farmAreaStatus = 0;
             source.farmAreaName = "";
            
 

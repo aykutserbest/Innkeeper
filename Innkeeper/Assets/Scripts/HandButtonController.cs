@@ -15,11 +15,18 @@ public class HandButtonController : MonoBehaviour
 
     }
 
+    private void Update()
+    {
+        source = GameObject.FindGameObjectWithTag("Scripts").GetComponent<GameSourceController>();
+    }
+
     public void ButtonTest()
     {
+
+        
         if (source.farmAreaStatus == 1  && source.seedStatus == 1)
         {
-            
+          
             GameObject.Find(source.farmAreaName).GetComponent<FarmPlantArea>().Plant();
 
         }
