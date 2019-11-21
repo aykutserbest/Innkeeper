@@ -89,25 +89,6 @@ public class FarmPlantArea : MonoBehaviour
 
         }
 
-
-
-
-        //if (source.seedType == "Wheat")
-        //{        
-        //    plants = GameObject.Find("WheatLevel1");
-        //    plants.GetComponent<Renderer>().enabled = true;
-        //}
-        //else if (source.seedType == "GreenGrape")
-        //{
-        //    plants = GameObject.Find("GreenGrapeLevel1");
-        //    plants.GetComponent<Renderer>().enabled = true;
-        //}
-        //else if (source.seedType == "RedGrape")
-        //{
-        //    plants = GameObject.Find("RedGrapeLevel1");
-        //    plants.GetComponent<Renderer>().enabled = true;
-        //}
-
     }
     
 }
