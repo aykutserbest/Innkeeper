@@ -27,7 +27,10 @@ public class IrrigationBoxController : MonoBehaviour
     {
         if (collision.transform.tag == "Player")
         {
+            
             level = plantedArea.plantLevel;
+            level++;
+            plantedArea.plantLevel = level;
             Debug.Log(level);
 
 
