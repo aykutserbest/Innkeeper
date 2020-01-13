@@ -27,14 +27,18 @@ public class IrrigationBoxController : MonoBehaviour
     {
         if (collision.transform.tag == "Player")
         {
-            
-            level = plantedArea.plantLevel;
-            level++;
-            plantedArea.plantLevel = level;
-            Debug.Log(level);
-
-
-
+            if (plantedArea.plantedSeed == "")
+            {
+                
+            }
+            else
+            {
+                level = plantedArea.plantLevel;
+                level++;
+                plantedArea.plantLevel = level;
+                plantedArea.PlantVisible(plantedArea.plantedSeed);
+                Debug.Log(level);
+            }
         }
     }
 }

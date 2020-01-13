@@ -1,0 +1,1 @@
+13.01.2020 / Yapılan : Sulamada ekili olmadığında bile Level yükselmesi fixlendi. Next: Sulandıkça artma oranı,visible olayları
